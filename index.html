@@ -13,52 +13,35 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Frontend Mentor | Product preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <div class="container">
-      <picture>
-        <source
-          srcset="images/image-product-mobile.jpg"
-          media="(max-width: 500px)"
-        />
-        <img
-          class="product-image"
-          src="images/image-product-desktop.jpg"
-          alt="Bottle of Gabrielle Essence Eau De Parfum"
-        />
-      </picture>
-      <div class="content">
-        <h3>Perfume</h3>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="price">
-          <h1>$149.99</h1>
-          <h3>$169.99</h3>
-        </div>
-        <button><img src="./images/icon-cart.svg" alt="" />Add to Cart</button>
-      </div>
-    </div>
+    <div class="card">
+      <div class="card__cover">
+        <picture>
+          <source
+            media="(min-width:700px)"
+            srcset="images/image-header-desktop.jpg"
+          />
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+          <img src="images/image-header-mobile.jpg" alt="Flowers" />
+        </picture>
+      </div>
+      <div class="card__main">
+        <h1 class="card__title">
+          Get <span>insights</span> that help your business grow.
+        </h1>
+        <p class="card__text">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <ul>
+          <li>10k+<span>companies</span></li>
+          <li>314<span>templates</span></li>
+          <li>12M+<span>queries</span></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
